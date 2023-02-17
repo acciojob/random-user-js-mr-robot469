@@ -1,4 +1,3 @@
-//your code here
 const getUserButton = document.getElementById("getUser");
 const fullName = document.getElementById("fullname");
 const photo = document.getElementById("photo");
@@ -23,9 +22,9 @@ async function myAsyncFunction(){
     }
 }
 
-const age = document.getElementById("age");
-const email = document.getElementById("email");
-const phone = document.getElementById("phone");
+const age = document.querySelector('[data-attr="age"]');
+const email = document.querySelector('[data-attr="email"]');
+const phone = document.querySelector('[data-attr="phone"]')
 
 age.addEventListener("click",function(){
     additionalInfo.innerText = fullName.dataset.age;
